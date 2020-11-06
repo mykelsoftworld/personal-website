@@ -13,21 +13,90 @@
     
     <!-- bootstrap  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
+    <style>
+    .sidenav {
+      margin-left: auto!important;
+  }
+        
+
+    @media screen and (max-width: 992px) {
+      .Top-container {
+        background: linear-gradient(to bottom, rgb(150,255,255) 0%, rgb(190,255,255) 100%);
+        padding-top: 5%;
+      }
+      .middle-container {
+        background: linear-gradient(to bottom, rgb(190,255,255) 0%, rgb(220,255,255) 100%);
+      }
+      #Menu-bar {
+          display: inline;
+      }
+      .navib{
+          background: none;
+          display: block;
+      }
+    .middle-2 {
+      background: linear-gradient(to bottom, rgb(220,255,255) 0%, rgb(255,255,255) 100%);
+    }
+    .f-rule{
+    padding-top: 15px;
+    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+ 
+    }
+
+    #content {
+      position: absolute;
+      top:0px;
+    }
+    
+
+  .navbar {
+      position: relative;
+      display: -ms-flexbox;
+      display: block;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: .5rem 1rem;
+      z-index: 3;
+      width:110px;
+  }
+      .sidenav {
+      
+          left: 0px;
+          display: inline-block;
+          width: 100px;
+      }
+          
+      
+      .sidenav > li {
+          display: inline-block;
+          width: 100px;
+          }
+      }
+    </style>
   </head>
 <body>
   <div id="Menu-bar">
       <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to bottom, rgb(150,255,255) 0%, rgb(180,255,255) 100%);" >
+    <nav class="navib navbar  navbar-expand-lg navbar-light" >
       <!--a class="navbar-brand" href="#">Navbar</a!-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="nav-bar">
-        <ul class="navbar-nav ml-auto">
+
+      <div class="collapse navbar-collapse sidenav" id="nav-bar">
+        <div class="sidenav">        
+          <ul class="navbar-nav ml-auto sidenav">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/mykelsoftworld">About</a>
           </li>
@@ -41,10 +110,13 @@
             <a class="nav-link" href="">Note</a>
           </li>
             <!--a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a!-->
-        </ul>
+         </ul>
+        </div>
+  
       </div>
     </nav>
   </div>
+  <div id="content">
     <div class="Top-container"> 
         <img class="Top-cloud" src="src/image/cloud.png" alt="cloud-img">
         <h1 class="name">I'm</h1>
@@ -62,7 +134,8 @@
           <p class="intro-1 touch" >I'm a professional Automation engineer and Data scientist.. </p>
         </div>
     </div>
-  <hr class="rule">
+  <div class="middle-2">
+      <hr class="rule f-rule">
         <div id="work" class="skills">
           <h2>My Skills.</h2>
           <div class="skill-row">
@@ -79,7 +152,7 @@
           </div>
           
         </div>
-  <hr class="rule">
+          <hr class="rule">
         <div id="contact-me" >
           <h2>Get In Touch</h2>
           <p class="hire-me touch">I'm currently available for freelancing work and coaching as well as handling your projects.</p>
@@ -90,13 +163,15 @@
         
         </div>
       
-      
+      </div>
+
       <div class="bottom-container">
         <a class="footer-link" href="https://www.linkedin.com/in/michael-amakoh-713585b5/">LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/Mykel1712">Twitter</a>
         <a class="footer-link" href="https://web.facebook.com/michael.amakoh">Facebook</a>
         <p class="cpoy-right" >© 2020 <spam class="my">Michael</spam> Chibuike Amakoh.</p>
       </div>
+    </div>
     
 </body>
 <footer>
