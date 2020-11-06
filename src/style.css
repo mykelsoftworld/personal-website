@@ -52,7 +52,7 @@ p {
 }
 .Top-container{
     width: 100%;
-    background-color: lightcyan;
+    background: linear-gradient(to bottom, rgb(180,255,255) 0%, rgb(210,255,255) 100%);
     position: relative;  
     
    }
@@ -87,6 +87,8 @@ text-decoration: underline;
     margin:auto;
     width: 100%;
     text-align: center;
+    background: linear-gradient(to bottom, rgb(210,255,255) 0%, rgb(255,255,255) 100%);
+
    
 }
 .my_pics {
@@ -163,12 +165,18 @@ margin-right: 30px;
     color: #11999E;
     font-weight: bold;
 }
+
+
+
 @media (max-width: 1010px){
     .touch {
         text-align: left;
         width: 60%;
     }
 }
+
+
+
 
 .btn {
    
