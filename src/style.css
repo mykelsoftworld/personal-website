@@ -52,10 +52,12 @@ p {
 
 .ctimer1{
     padding-left: 3%;
-    display: inline;
+    display: inline-block;
+    width:160px;
 }
 .time {
     color: #005;
+    margin-bottom: 0;
 }
 
 .greeting {
@@ -340,10 +342,12 @@ margin-right: 30px;
     }
     .ctimer1{
         padding-left: 3%;
-        display: inline;
+        display: inline-block;
+        width:160px;
     }
     .time {
         color: #66BFBF;
+        margin-bottom: 0;
     }
     
     .greeting {
