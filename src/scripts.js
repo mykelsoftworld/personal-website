@@ -29,6 +29,8 @@ function timeNow() {
   m = time.getMinutes();
   s = time.getSeconds();
   if ( s < 10 ) { s = "0" + s; } /* we add a 0 in front of s, when it is lower than 10, because that's what most clocks display, this is for the human user rather than for any need by the computer */
+  if ( m < 10 ){ m = "0" + m;}
+  if ( h < 10 ){ h = "0" + h;}
   document.querySelector(".time").innerHTML = h + ':' + m + ':' + s;
   document.querySelector(".time2").innerHTML = h + ':' + m + ':' + s;
 
