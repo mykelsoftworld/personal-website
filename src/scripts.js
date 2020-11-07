@@ -1,4 +1,49 @@
+var date = new Date;
+var hours = date.getHours();
+var topimg = $(".Top-cloud");
+var btmimg = $(".Bottom-cloud");
 
+
+
+function changecloud(time){
+  if (time >=6 && time <=19){
+  topimg.attr("src","src/image/daylight.png")
+  btmimg.attr("src","src/image/daylight.png")
+} else{
+  btmimg.attr("src","src/image/night.png")
+  topimg.attr("src","src/image/night2.png")
+}
+}
+
+
+
+var time, h, m, s, greeting;
+
+window.onload = function() { setInterval( timeNow, 100); }
+
+function timeNow() {
+
+  time = new Date();
+
+  h = time.getHours();
+  m = time.getMinutes();
+  s = time.getSeconds();
+  if ( s < 10 ) { s = "0" + s; } /* we add a 0 in front of s, when it is lower than 10, because that's what most clocks display, this is for the human user rather than for any need by the computer */
+  document.querySelector(".time").innerHTML = h + ':' + m + ':' + s;
+  document.querySelector(".time2").innerHTML = h + ':' + m + ':' + s;
+
+
+  if (h>=0 && h<12){
+    greeting="Good Morning"
+  }else if(h>=12 && h<18){
+    greeting="Good Afternoon"
+  }else{
+    greeting="Good Evening"
+  }
+  document.querySelector(".greeting").innerHTML = greeting;
+  document.querySelector(".greeting2").innerHTML = greeting;
+
+}
 
 const mykelBot = () => {
   var $id = 0;
@@ -80,4 +125,5 @@ const mykelBot = () => {
 
 $(document).ready(() => {
     mykelBot();
+    changecloud(hours);
 });

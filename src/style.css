@@ -42,15 +42,33 @@ h4 {
     border-style: dotted none none none ;
     border-width: 5px;
     border-color:  #DCDCDC;
-    width: 5%;
-   
-    
-    
+    width: 5%;  
 }
 p {
     line-height: 2;
     width: 100%;
    
+}
+
+.ctimer1{
+    padding-left: 3%;
+    display: inline;
+}
+.time {
+    color: #005;
+}
+
+.greeting {
+    color: #555;
+}
+
+.ctimer2{
+    padding-left: 3%;
+    display: none;
+}
+
+.tcontainer{
+    padding-top: auto;
 }
 .Top-container{
     width: 100%;
@@ -69,9 +87,10 @@ text-decoration: underline;
 }
 .Top-cloud {
     position: absolute;
-    right: 300px;
+    right: 5%;
     top: 40px;
-    
+    width: 300px;
+    height: auto;
 }
 .navib {
     background: rgb(180,255,255);
@@ -88,12 +107,14 @@ text-decoration: underline;
 .middle-2 {
     background: linear-gradient(to bottom, rgb(220,255,255) 0%, rgb(255,255,255) 100%);
     }
-.Bottom-cloud {
+
+    .Bottom-cloud {
     position: absolute;
-    left: 250px;
-    bottom: 250px;
- 
-}
+    width: 300px;
+    height: auto;
+    left: 5%;
+    bottom: 25%;
+    }
 .mountain {
     display: block;
     margin-left: auto;
@@ -222,4 +243,117 @@ margin-right: 30px;
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+@media (prefers-color-scheme: dark) { 
+
+    body {
+        color:rgb(0,58,59);
+    }
+    
+    a {
+        color: teal;
+    }
+    a:hover{
+        color: #eaf6fe;;
+    }
+    h1.name,h2.name,h3.name {
+
+        color: rgb(59,135,135);     
+    }
+    .profile h2{
+        color: rgb(74,164,165);
+    }
+    
+    .work h2 {
+
+        color: rgb(74,164,165);
+    }
+    .skill-row h3 {
+        color: rgb(74,216,219);
+    }
+    #contact-me h2 {
+        color: rgb(86,142,141); 
+    }
+    .rule{
+        border-color:  #DCDCDC;
+    }
+    
+   
+    .hire-me {
+        color: rgb(80,215,219);
+       
+    }
+    .intro-1 {
+        color: rgb(226,229,226);
+    }
+
+    .skill-row p {
+        color: rgb(226,229,226);
+    }
+
+    #contact-me .coach {
+        color: rgb(226,229,226);
+    }
+    .side-nav .nav-link{
+        color: rgb(74,164,165);
+    }
+    .Top-container{
+
+        background: linear-gradient(to bottom, rgb(0,57,58) 0%, rgb(0,48,48) 100%);
+       }
+    
+    .tcontainer{
+        padding-top: auto;
+    }
+    .navib {
+        background: rgb(0,58,59);
+        }
+
+    .middle-2 {
+        background: linear-gradient(to bottom, rgb(5,41,41) 0%, rgb(20,34,34) 100%);
+        }
+    
+    .middle-container{
+
+        background: linear-gradient(to bottom, rgb(0,48,48) 0%, rgb(5,41,41) 100%);
+       
+    }
+    .footer-link{
+        color:rgb(95,221,220)
+    }
+    .bottom-container {
+        background-color: rgb(0,55,55);
+    
+      }
+    .footer-link {
+        color: rgb(95,221,220);
+    }
+    .cpoy-right {
+        color: mistyrose;
+    
+    }
+   
+    
+    .hire-me {
+
+        color: #11999E;
+    }
+    .ctimer1{
+        padding-left: 3%;
+        display: inline;
+    }
+    .time {
+        color: #66BFBF;
+    }
+    
+    .greeting {
+        color: #508F80;
+    }
+    
+    .ctimer2{
+        padding-left: 3%;
+        display: none;
+        float: right;
+    }
+    
 }
